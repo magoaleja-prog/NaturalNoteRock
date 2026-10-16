@@ -60,9 +60,22 @@ unset($__props);
 // -------------------------------------------------------------------
 $__script = str_replace('\\', '/', $_SERVER['SCRIPT_NAME'] ?? '/');
 $__pos    = strpos($__script, '/' . APP_FOLDER);
-$__base   = ($__pos !== false)
-    ? substr($__script, 0, $__pos + strlen(APP_FOLDER) + 1)
-    : '/';
+
+if ($__pos !== false) {
+    // Nos quedamos con todo lo anterior al nombre de la carpeta, mas la carpeta.
+    // Ej: "/NaturalNoteRock/login.php" -> "/NaturalNoteRock"
+    $__base = substr($__script, 0, $__pos + strlen(APP_FOLDER) + 1);
+} else {
+    $__base = '';
+}
+
+// Nos aseguramos SIEMPRE de terminar con "/" (si no, url()/asset()
+// generan rutas rotas como "/NaturalNoteRocklogin.php" o "/NaturalNoteRockassets/...").
+$__base = rtrim($__base, '/') . '/';
+if ($__base === '//') {
+    $__base = '/';
+}
+
 define('BASE_PATH', $__base);
 unset($__script, $__pos, $__base);
 
