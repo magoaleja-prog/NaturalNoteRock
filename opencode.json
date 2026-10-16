@@ -1,0 +1,23 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "instructions": [
+    "README.md",
+    "docs/ARQUITECTURA.md",
+    "docs/PILARES_POO.md",
+    "docs/MANUAL_USUARIO.md"
+  ],
+  "watcher": {
+    "ignore": [
+      "uploads/avatares/**",
+      "java/build/**",
+      "database/*.log"
+    ]
+  },
+  "permissions": [
+    {
+      "action": "shell",
+      "resource": "git push *",
+      "effect": "ask"
+    }
+  ]
+}
