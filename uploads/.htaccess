@@ -1,0 +1,14 @@
+# Proteccion de la carpeta de subidas.
+# Evita que un archivo subido con extension .php se ejecute.
+# Solo permite servir imagenes estaticas.
+
+<FilesMatch "\.(php|phtml|php3|php4|php5|php7|phps|pl|py|cgi|asp|aspx|sh|exe)$">
+    Require all denied
+</FilesMatch>
+
+php_flag engine off
+Options -Indexes
+
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+</IfModule>

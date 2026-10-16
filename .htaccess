@@ -1,0 +1,34 @@
+# =====================================================================
+#  Natural Note Rock - configuracion de Apache
+# =====================================================================
+DirectoryIndex index.php index.html
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Bloquea el acceso web directo a carpetas internas (codigo y datos).
+    RewriteRule ^(config|src|database|docs)/ - [F,L]
+
+    # Bloquea la descarga de archivos SQL y de respaldo.
+    RewriteRule \.(sql|ini|log|md)$ - [F,L]
+</IfModule>
+
+# Evita listar directorios.
+Options -Indexes
+
+# Cabeceras de seguridad basicas.
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# Oculta la firma del servidor (si el modulo esta activo).
+ServerSignature Off
+
+# Zona horaria de PHP (opcional; tambien se fija en config/config.php).
+<IfModule mod_php.c>
+    php_value date.timezone "America/Bogota"
+    php_value upload_max_filesize 4M
+    php_value post_max_size 5M
+</IfModule>

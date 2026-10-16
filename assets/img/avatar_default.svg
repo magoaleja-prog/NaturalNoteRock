@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#262b34"/>
+      <stop offset="1" stop-color="#0d0f12"/>
+    </linearGradient>
+    <linearGradient id="skin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#a5d6a7"/>
+      <stop offset="1" stop-color="#2e7d32"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="200" fill="url(#bg)"/>
+  <!-- Hoja decorativa -->
+  <path d="M100 172 C66 150 66 104 100 74 C134 104 134 150 100 172 Z" fill="rgba(76,175,80,.18)"/>
+  <!-- Avatar generico -->
+  <circle cx="100" cy="82" r="34" fill="url(#skin)"/>
+  <path d="M40 178 C40 138 66 120 100 120 C134 120 160 138 160 178 Z" fill="url(#skin)"/>
+  <!-- Pua / nota musical -->
+  <circle cx="100" cy="82" r="10" fill="#0d0f12" opacity=".25"/>
+  <path d="M100 172 L100 74" stroke="rgba(255,255,255,.15)" stroke-width="2"/>
+  <text x="100" y="196" font-family="Oswald, sans-serif" font-size="14" fill="#8b857a"
+        text-anchor="middle">Natural Note Rock</text>
+</svg>
