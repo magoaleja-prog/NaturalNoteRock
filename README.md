@@ -1,5 +1,7 @@
 # Natural Note Rock · UCO
 
+> _Tarea de Quipux con POO retomada utilizando la herramienta OpenCode, Git y varios lenguajes de programación._
+
 Sistema académico educativo con fusión estética entre **rock** y **naturaleza**. Desarrollado con HTML, CSS, JavaScript, PHP, Java y MySQL, organizando la lógica bajo los **4 pilares de la Programación Orientada a Objetos (POO)**: encapsulamiento, herencia, polimorfismo y abstracción.
 
 - **Organización educativa**: UCO

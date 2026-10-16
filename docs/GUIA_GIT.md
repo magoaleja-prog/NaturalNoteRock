@@ -2,7 +2,7 @@
 
 ## Buenas prácticas aplicadas
 - **Historial claro**: commits atómicos con mensajes descriptivos.
-- **Ramas organizadas**: rama `master` (estable). Para este proyecto se realizó desarrollo incremental con commits descriptivos.
+- **Ramas organizadas**: rama `main` (estable). Para este proyecto se realizó desarrollo incremental con commits descriptivos.
 - **Mensajes descriptivos**: cada commit explica qué se agrega o modifica (estructura, modelos, UI, Java, docs...).
 
 ## Flujo de trabajo recomendado
@@ -26,18 +26,18 @@ git commit -m "feat: Agrega controlador de notas con barra deslizante animada"
 ```
 
 ### 4. Mantener ramas limpias
-Antes de fusionar, actualizar `develop` con `master`:
+Antes de fusionar, actualizar `develop` con `main`:
 ```bash
 git checkout develop
-git pull origin master
-git rebase origin/master  # o merge según política
+git pull origin main
+git rebase origin/main  # o merge según política
 ```
 
-### 5. Fusionar a master
+### 5. Fusionar a main
 ```bash
-git checkout master
+git checkout main
 git merge --no-ff develop -m "merge: Integra mejoras de interfaz del estudiante"
-git push origin master
+git push origin main
 ```
 
 ## Convenciones de commits
