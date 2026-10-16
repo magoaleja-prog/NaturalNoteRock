@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Aro metalico -->
+  <defs>
+    <linearGradient id="metal" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4a515f"/>
+      <stop offset="1" stop-color="#14171c"/>
+    </linearGradient>
+    <linearGradient id="leaf" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#81c784"/>
+      <stop offset="1" stop-color="#1b5e20"/>
+    </linearGradient>
+  </defs>
+  <circle cx="32" cy="32" r="30" fill="url(#metal)"/>
+  <circle cx="32" cy="32" r="30" fill="none" stroke="#f9a825" stroke-width="2"/>
+  <!-- Hoja -->
+  <path d="M32 50 C20 42 20 26 32 14 C44 26 44 42 32 50 Z" fill="url(#leaf)"/>
+  <path d="M32 16 L32 48" stroke="#0f2415" stroke-width="2"/>
+  <!-- Cuerda de guitarra -->
+  <path d="M18 40 C26 36 38 36 46 40" stroke="#f9a825" stroke-width="2" fill="none"/>
+  <circle cx="32" cy="20" r="3" fill="#e91e63"/>
+</svg>
