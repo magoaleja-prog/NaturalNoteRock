@@ -32,6 +32,9 @@ NaturalNoteRock/
 ├── database/              # SQL + db.properties (compartido PHP/Java)
 ├── java/                  # Aplicación desktop Java (JDBC)
 ├── docs/                  # Guías y manuales
+├── opencode.json          # Configuración de OpenCode para el proyecto
+├── OPENCODE.md            # Qué es OpenCode y cómo se usó
+├── PROMPTS.md            # Registro de los prompts utilizados
 └── README.md
 ```
 
@@ -53,6 +56,8 @@ NaturalNoteRock/
 - [Manual de Usuario](docs/MANUAL_USUARIO.md)
 - [Arquitectura del Proyecto](docs/ARQUITECTURA.md)
 - [README Java](java/README.md)
+- [OpenCode (herramienta de IA utilizada)](OPENCODE.md)
+- [Prompts utilizados durante el desarrollo](PROMPTS.md)
 
 ## Licencia / Propósito
 
