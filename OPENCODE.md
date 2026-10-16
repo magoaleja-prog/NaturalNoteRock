@@ -71,7 +71,7 @@ OpenCode se empleó como **asistente de desarrollo** para:
    datos** (y el mismo `database/db.properties`) que el sitio PHP, vía JDBC.
 6. **Probar** el sistema: servidor embebido `php -S`, Apache de XAMPP, flujos de
    login por rol, control de acceso, subida de fotos y la API de notificaciones.
-7. **Versionar** el trabajo con Git: ramas `master`/`develop`, ramas de
+7. **Versionar** el trabajo con Git: ramas `main`/`develop`, ramas de
    funcionalidad y `hotfix`, con mensajes de commit descriptivos.
 8. **Documentar**: guías de instalación y Git, manual de usuario, arquitectura y
    explicación de los pilares de la POO.

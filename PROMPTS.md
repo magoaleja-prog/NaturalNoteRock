@@ -75,7 +75,7 @@ Diagnóstico del **bug real**: `BASE_PATH` se calculaba **sin la barra final**
 reimportó la base de datos a estado limpio.
 
 ### 2.4 `antes de que sigas no hiciste ni un commit`
-Reconstrucción del repositorio Git con **ramas organizadas** (`master`,
+Reconstrucción del repositorio Git con **ramas organizadas** (`main`,
 `develop`, `feature/jardin-vivo-musica`, `hotfix/rutas-base`) y **commits
 descriptivos** por fase de desarrollo.
 
