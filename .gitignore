@@ -1,0 +1,34 @@
+# =====================================================================
+#  Natural Note Rock - archivos ignorados por Git
+# =====================================================================
+
+# Fotos de perfil subidas por los usuarios (no versionar contenido)
+/uploads/avatares/*
+!/uploads/avatares/.gitkeep
+
+# Archivos de entorno y credenciales locales
+.env
+*.local
+config/db.local.php
+
+# Salidas de compilacion Java
+/java/build/
+/java/out/
+/java/dist/
+/java/*.class
+*.jar
+
+# Editores / IDE
+.vscode/
+.idea/
+*.sublime-*
+*.swp
+
+# Sistema operativo
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Registros y temporales
+*.log
+_test.php
