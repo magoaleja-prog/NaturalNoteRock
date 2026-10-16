@@ -17,6 +17,8 @@ config/db.local.php
 /java/dist/
 /java/*.class
 *.jar
+# ...salvo el conector JDBC que se distribuye con el proyecto
+!java/lib/mysql-connector-j-*.jar
 
 # Editores / IDE
 .vscode/
